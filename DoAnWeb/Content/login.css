@@ -1,0 +1,67 @@
+﻿body {
+    padding-top: 70px;
+}
+
+#menu {
+    background-color: #38003c;
+    height: 70px;
+}
+
+    #menu a {
+        color: #fff;
+        font-weight: bold;
+        padding: 23px;
+    }
+
+        #menu a:hover {
+            background-color: #e90052;
+            transition: all 0.25s;
+        }
+#quangcao {
+    background-color: #e4e5e7;
+}
+
+#search1 button:hover {
+    background-color: #e90052;
+    transition: all 0.25s;
+}
+
+#search1 {
+    padding: 15px;
+}
+
+#bao_content {
+    padding-top: 15px;
+    background-color: #e4e5e7;
+}
+
+#main_content {
+    background-color: #e4e5e7;
+}
+    #main_content a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #e90052;
+    }
+        #main_content a:hover {
+            background-color: #38003c;
+        }
+#footer {
+    background-color: #38003c;
+    height: 250px;
+}
+
+#content_foot {
+    color: white;
+    padding-top: 15px;
+}
+
+    #content_foot span {
+        font-weight: bold;
+    }
+
+    #content_foot ul li a {
+        color: white;
+        text-decoration: none;
+        list-style: none;
+    }

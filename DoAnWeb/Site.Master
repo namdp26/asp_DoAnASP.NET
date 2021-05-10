@@ -1,0 +1,146 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="DoAnWeb.SiteMaster" %>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="Content/site.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style type="text/css">
+        .auto-style1 {
+            width: 101px;
+            height: 71px;
+            margin-left: 0px;
+        }
+    </style>
+</head>
+<body>
+     <form runat="server">
+	<!-- thanhmenu -->
+	<div class="container-fluid fixed-top"  id="menu">
+        <div class="col-md-1">
+
+        </div>
+		<div class="container">
+            <div class="row" >
+    		<div class="col-md-11">
+    			 <nav class="navbar navbar-expand-lg " id="menu">
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                              <li class="nav-item active">
+                                <a class="nav-link" href="default.aspx">Trang Chủ <span class="sr-only">(current)</span></a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="sanpham.aspx">Sản Phẩm</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="giohang.aspx">Giỏ Hàng</a>
+                              </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Liên Hệ</a>
+                              </li>
+                                <li class="nav-item">
+                                <a class="nav-link" href="capnhatthongtin.aspx">Tài Khoản</a>
+                              </li>
+                          </ul>
+                        <form class="form-inline my-2 my-lg-0" id="search1">
+                          <input class="form-control mr-sm-2" type="search" placeholder="tìm kiếm trong trang" aria-label="Search">
+                          <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="font-weight: bold; color: white; border-color: white;">Tìm Kiếm</button>
+                        </form>
+                      </div>
+                 </nav>
+    		</div>
+            <div class="col-md-1" id="btndangxuat">
+                <asp:Button ID="btndang_xuat" class="btn btn-danger"  runat="server" Text="Đăng Xuất" OnClick="btndang_xuat_Click"/>
+            </div>
+    		</div>
+		</div>
+	</div>
+	<!-- thanh menu -->
+	<!-- thanh slide quang cao -->
+	
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+    </asp:ContentPlaceHolder>	
+	<!-- thanh quang cao -->
+	<!-- thanh mat hang -->
+	<!-- thanh noi dung chinh -->
+    
+	<div class="container-fluid " id="bao_content">
+		<div class="container" id="main_content">
+			<div class="row" >
+			    <div class="col-md-3">
+                     <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+                 
+                    </asp:ContentPlaceHolder>	
+				
+			    </div>
+			<!-- the bottom noi dung -->
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+
+                    </asp:ContentPlaceHolder>
+			<!-- the bottom noi dung -->
+	        </div>
+	    </div>
+    </div>
+	<!-- thanh noi dung chinh -->
+	<!-- thanh mat hang -->
+	 <!-- thanh footer -->
+	 <div id="footer">
+	 	<div class="container" id="content_foot">
+	 		<div class="row">
+	 			<div class="col-md-3">
+	 			<span>Hỗ trợ khách hàng</span>
+	 			<ul>
+         		 <li><a href="">Liên hệ</a> </li>
+
+         		 <li><a href="">Hướng dẫn thanh toán</a></li>
+         		 <li><a href="">Chính sách đổi trả</a></li>
+         		 <li><a href="">Câu hỏi thường gặp</a></li>
+    		    </ul>
+	 		</div>
+	 		<div class="col-md-3">
+	 			<span>Tin tức - sự kiện</span>
+	 			<ul>
+         		 <li><a href="">Cách chọn giày bóng đá hợp chân</a> </li>
+
+         		 <li><a href="">Adidas tung ra thị trường mẫu giày mới 2019</a></li>
+    		    </ul>
+	 		</div>
+	 		<div class="col-md-3">
+	 			<span>Sản phẩm ưa chuộng</span>
+	 			<ul>
+          <li><a href="">Adidas Predator 19.1</a></li>
+
+          <li><a href="">Adidas Copa 19</a></li>
+
+          <li><a href="">Nike Mercurial XL</a></li>
+        </ul>
+	 		</div>
+	 		<div class="col-md-3">
+	 			<span>Kết nối với chúng tôi</span>
+	 			<div style="padding: 5px 5px;"><img src="Img/facebook.png">Facebook
+                        <img src="Img/Tweet.png">Tweeter 
+
+	 			</div>
+                 <div style="padding: 5px 5px;"><img src="Img/Gplus.png">Google+
+                 <img  src="Img/youtube.png">Youtube
+
+                </div>
+        <div style="padding: 5px 5px;">
+           <img src="Img/phone2.png"> Hotline: 0337731177
+        </div>
+	 		</div>
+	 		</div>
+	 		
+	 	</div>
+	 </div>
+     </form>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+﻿/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .jumbotron {
+        margin-top: 20px;
+    }
+
+    .body-content {
+        padding: 0;
+    }
+}
+
+
+
+#menu {
+    background-color: #38003c;
+    height: 70px;
+}
+
+    #menu a {
+        color: #fff;
+        font-weight: bold;
+        padding: 23px;
+    }
+
+        #menu a:hover {
+            background-color: #e90052;
+            transition: all 0.25s;
+        }
+
+#quangcao {
+    background-color: #e4e5e7;
+}
+
+#menu button:hover {
+    background-color: #dc3545;
+    transition: all 0.25s;
+}
+
+#search1 {
+    padding: 15px;
+}
+
+#bao_content {
+    padding-top: 15px;
+    background-color: #e4e5e7;
+}
+
+#main_content {
+    background-color: #e4e5e7;
+}
+
+    #main_content a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #e90052;
+    }
+
+        #main_content a:hover {
+            background-color: #38003c;
+        }
+
+#footer {
+    background-color: #38003c;
+    height: 270px;
+}
+
+#content_foot {
+    color: white;
+    padding-top: 15px;
+}
+
+    #content_foot span {
+        font-weight: bold;
+    }
+
+    #content_foot ul li a {
+        color: white;
+        text-decoration: none;
+        list-style: none;
+    }
+
+#form_dangnhap {
+    background-color: #e4e5e7;
+    font-weight: bold;
+}
+
+    #form_dangnhap button:hover {
+        background-color: #38003c;
+    }
+
+#btndangxuat {
+    padding: 15px;
+    font-weight: bold;
+}
+
+    #btndangxuat btn {
+        background-color: yellow;
+    }
+#quantity {
+    width: 47px;
+    height: 20px
+}
